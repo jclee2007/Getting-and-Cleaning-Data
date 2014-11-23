@@ -1,8 +1,5 @@
-Course Project
-==============
-
-
 Human Activity Recognition Using Smartphones Dataset
+====================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Università degli Studi di Genova.
