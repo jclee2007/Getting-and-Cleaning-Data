@@ -16,7 +16,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 For each record it is provided:
 ======================================
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-- A 66-feature vector with MEANS for time and frequency domain variables. 
+- A 66-feature vector with averages for time and frequency domain variables. 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
@@ -24,12 +24,11 @@ The dataset includes the following files:
 =========================================
 
 - 'README.md'
+- 'Codebook.md':  Description of variables in the data set
+- 'ByAct_BySubject.txt': complete data set.
 
-- 'features_info.txt': Shows information about the variables used on the feature vector.
-
-- 'features.txt': List of all features.
-- 
-
-
-data <- read.table("ByAct_BySubject.txt",header=TRUE)
-View(data)
+Reading the data set into R:
+=========================================
+To read the data set into R, do:
+1. data <- read.table("ByAct_BySubject.txt",header=TRUE)   #specify.modify filepath as needed
+2. View(data)
