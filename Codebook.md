@@ -33,14 +33,14 @@ The set of variables that were estimated from these signals are:
 * mean: Mean value
 * std: Standard deviation
 
-TRANSFORMATION
-==============
+Additional Data Transformation
+==============================
 Given the sampling frequency and windows, each experiment generated numerous observations of mean and standard deviation variables for each signal above.  To simplify, data for each variable listed above was then aggregated by calculating the MEAN of all observations for each "experiment."  An "experiment" consists of all combinations of "subjects" (individuals participating in the experiment) and the  "activity" performed (i.e. WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING or LAYING).
  
 
-COMPLETE VARIABLE LIST
+Variable List
 ======================
-The complete list of 68 variables of each feature vector are listed below.  The list below includes "subject" which identifies the individual carrying out the experiment, and the "activity" being performed in the experiment.  
+The complete list of 68 variables of each feature vector are listed below.  The list below includes "subject" which identifies the individual carrying out the experiment, and the "activity" being performed in the experiment.  Also, the variable names are "descriptive" in that they adequately communicate all the relevant attributes of the signal being measured (i.e. Time vs. Frequency domain, Body vs. Gravity, Accelerometer vs. Gyroscope, XYZ direction, Mean vs Standard Deviation as well as Jerk and Magnitude).    
 
 1. "activity"
 2. "subject"
