@@ -34,5 +34,5 @@ The dataset includes the following files:
 Reading the data set into R:
 =========================================
 To read the data set into R, do:
-1. data <- read.table("ByAct_BySubject.txt",header=TRUE)   #specify.modify filepath as needed
-2. View(data)
+1.  data <- read.table("ByAct_BySubject.txt",header=TRUE)   #specify.modify filepath as needed
+2.  View(data)
