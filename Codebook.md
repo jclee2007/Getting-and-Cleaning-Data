@@ -35,7 +35,7 @@ The set of variables that were estimated from these signals are:
 
 Additional Data Transformation
 ==============================
-Given the sampling frequency and windows, each experiment generated numerous observations of mean and standard deviation variables for each signal above.  To simplify, data for each variable listed above was then aggregated by calculating the MEAN of all observations for each "experiment."  An "experiment" consists of all combinations of "subjects" (individuals participating in the experiment) and the  "activity" performed (i.e. WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING or LAYING).
+Given the sampling frequency and windows, each experiment generated numerous observations of mean and standard deviation variables for each signal above.  To simplify, data for each variable listed above was then aggregated by calculating the MEAN across all observations for each "experiment."  An "experiment" consists of all combinations of "subjects" (individuals participating in the experiment) and the  "activity" performed (i.e. WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING or LAYING).
  
 
 Variable List
