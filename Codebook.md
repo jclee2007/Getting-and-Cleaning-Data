@@ -37,6 +37,19 @@ Additional Data Transformation
 ==============================
 Given the sampling frequency and windows, each experiment generated numerous observations of mean and standard deviation variables for each signal above.  To simplify, data for each variable listed above was then aggregated by calculating the MEAN across all observations for each "experiment."  An "experiment" consists of all combinations of "subjects" (individuals participating in the experiment) and the  "activity" performed (i.e. WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING or LAYING).
  
+Tidy Data Structure
+===================
+The data is structured in a "wide and short" format, as oppose to a "tall and narrow" format.  This data structure is nevertheless "tidy" as it complies with the key criteria:  
+
+*  Each variable measured should be in a seperate column.  
+The data set is made up of three entities:  subjects, activities and measurements.  Measurements are in columns and (one could argue) are independent of each other, and therefore "tidy".  For example, as noted by David Hood (Community TA), "it is possible for an action to change a y direction reading in the phone without changing a x or z direction reading."  (See:   https://class.coursera.org/getdata-009/forum/thread?thread_id=192).  Moreover, Wickham's paper on Tidy Data indicates that the determination of whether a data set is "tidy" could also depend on the problem or question that we are trying to solve or answer.  This dataset allows for easy analysis of signals across different directions and sub-devices like the accelerometer vs. the gyroscope, hence conforms with "tidy" requirements. 
+
+*  Each different observation of that data should be in a separate row.  
+Each row in the data set represents an observation for every combination of "subject" in the experiment and the "activity" performed. 
+
+*  There should be one table for each "kind" of variable
+
+This data set spans only one kind of variable, which are readings from the Samsung device.
 
 Variable List
 ======================
@@ -111,16 +124,3 @@ The complete list of 68 variables of each feature vector are listed below.  The 
 67. "fBodyBodyGyroMag.std.."
 68. "fBodyBodyGyroJerkMag.std.." 
 
-Tidy Data Structure
-===================
-The data is structured in a "wide and short" format, as oppose to a "tall and narrow" format.  This data structure is nevertheless "tidy" as it complies with the key criteria:  
-
-*  Each variable measured should be in a seperate column.  
-The data set is made up of three entities:  subjects, activities and measurements.  Measurements are in columns and (one could argue) are independent of each other, and therefore "tidy".  For example, as noted by David Hood (Community TA), "it is possible for an action to change a y direction reading in the phone without changing a x or z direction reading."  (See:   https://class.coursera.org/getdata-009/forum/thread?thread_id=192).  Moreover, Wickham's paper on Tidy Data indicates that the determination of whether a data set is "tidy" could also depend on the problem or question that we are trying to solve or answer.  This dataset allows for easy analysis of signals across different directions and sub-devices like the accelerometer vs. the gyroscope, hence conforms with "tidy" requirements. 
-
-*  Each different observation of that data should be in a separate row.  
-Each row in the data set represents an observation for every combination of "subject" in the experiment and the "activity" performed. 
-
-*  There should be one table for each "kind" of variable
-
-This data set spans only one kind of variable, which are readings from the Samsung device.
