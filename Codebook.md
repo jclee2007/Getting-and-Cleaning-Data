@@ -122,4 +122,5 @@ The data set is made up of three entities:  subjects, activities and measurement
 Each row in the data set represents an observation for every combination of "subject" in the experiment and the "activity" performed. 
 
 *  There should be one table for each "kind" of variable
-This data set is for one kind of variable, which are readings from the Samsung device.
+
+This data set spans only one kind of variable, which are readings from the Samsung device.
