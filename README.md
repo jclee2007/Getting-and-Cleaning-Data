@@ -31,7 +31,7 @@ The dataset includes the following files:
 - 'Codebook.md':  Description of variables in the data set
 - 'ByAct_BySubject.txt': complete data set.
 
-Reading the data set into R:
+View the data set in R:
 =========================================
 To read the data set into R, do:
 -  data <- read.table("ByAct_BySubject.txt",header=TRUE)   #specify.modify filepath as needed
