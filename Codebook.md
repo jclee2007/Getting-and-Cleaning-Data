@@ -111,3 +111,11 @@ The complete list of 68 variables of each feature vector are listed below.  The 
 67. "fBodyBodyGyroMag.std.."
 68. "fBodyBodyGyroJerkMag.std.." 
 
+Tidy Data Structure
+===================
+The data 
+
+
+
+https://coursera-forum-screenshots.s3.amazonaws.com/35/6e667027e111e4986dbdfa3736d1fd/320.png
+
