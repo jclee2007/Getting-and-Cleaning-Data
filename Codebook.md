@@ -113,9 +113,13 @@ The complete list of 68 variables of each feature vector are listed below.  The 
 
 Tidy Data Structure
 ===================
-The data 
+The data is structured in a "wide and short" format, as oppose to a "tall and narrow" format.  This data structure is nevertheless "tidy" as it complies with the key criteria:  
 
+*  Each variable measured should be in a seperate column.  
+The data set is made up of three entities:  subjects, activities and measurements.  Measurements are in columns and (one could argue) are independent of each other, and therefore "tidy".  For example, as noted by David Hood (Community TA), "it is possible for an action to change a y direction reading in the phone without changing a x or z direction reading."  (See:   https://class.coursera.org/getdata-009/forum/thread?thread_id=192).  Moreover, Wickham's paper on Tidy Data indicates that the determination of whether a data set is "tidy" could also depend on the problem or question that we are trying to solve or answer.  This dataset allows for easy analysis of signals across different directions and sub-devices like the accelerometer vs. the gyroscope, hence conforms with "tidy" requirements. 
 
+*  Each different observation of that data should be in a separate row.  
+Each row in the data set represents an observation for every combination of "subject" in the experiment and the "activity" performed. 
 
-https://coursera-forum-screenshots.s3.amazonaws.com/35/6e667027e111e4986dbdfa3736d1fd/320.png
-
+*  There should be one table for each "kind" of variable
+This data set is for one kind of variable, which are readings from the Samsung device.
